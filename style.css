@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin:0px;
+    padding : 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(9, 26, 80);
+}
+
+.main{
+    height: 43vh;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 20px;
+    padding:20px;
+}
+
+h1{
+    border-bottom: 2px grey solid;
+    width: 100%;
+    margin-bottom: 12px;
+    text-align: center;
+    padding-bottom:3px;
+}
+
+.guess_blocks{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 12px;
+    border-bottom: 2px grey solid;
+    padding-bottom:10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.guess_blocks input{
+    width: 15%;
+    height: 50px;
+    color:rgb(9, 26, 80);
+    border:2px grey solid;
+    border-radius: 12px;
+    margin:auto;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+
+}
+
+.body{
+    /* border-bottom: 2px grey solid; */
+    padding-bottom: 10px;
+}
+
+.reset{
+    background-color: rgb(9, 26, 80);
+    height: 55px;
+    font-size: 20px;
+    color:white;
+    border-radius: 12px;
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+.reset:hover{
+    cursor: pointer;
+}
+
+.typing_input{
+    z-index: -999;
+    position: absolute;
+    opacity: 0;
+}
